@@ -1,6 +1,7 @@
 package data;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Recipe {
 
@@ -8,13 +9,25 @@ public class Recipe {
 
     private String name;
 
-    private ArrayList<Ingredient> ingredients;
+    private List<Ingredient> ingredients;
 
-    private ArrayList<Step> steps;
+    private List<Step> steps;
 
     private int servings;
 
     private String image;
 
+    public Recipe(int id, String name, List<Ingredient> ingredients, List<Step> steps, int servings, String image) {
+        this.id = id;
+        this.name = name;
+        this.ingredients = ingredients;
+        this.steps = steps;
+        this.servings = servings;
+        this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
 

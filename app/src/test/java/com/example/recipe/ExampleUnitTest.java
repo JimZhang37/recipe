@@ -2,6 +2,11 @@ package com.example.recipe;
 
 import org.junit.Test;
 
+import java.io.IOException;
+
+import utilities.JSONTool;
+import utilities.NetworkUtils;
+
 import static org.junit.Assert.*;
 
 /**
@@ -14,4 +19,26 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+//    @Test
+//    public void json_isCorrect() {
+//        assertEquals("", JSONTool.toJson());
+//    }
+//
+//    @Test
+//    public void obj_isCorrect() {
+//        assertEquals("", JSONTool.fromJson());
+//    }
+//
+//    @Test
+//    public void url_isCorrect() {
+//        String s = "";
+//        try{
+//            s =  NetworkUtils.getResponseFromHttpUrl();
+//        }catch(IOException  e){
+//            e.printStackTrace();
+//        }
+//
+//        assertEquals("",s);
+//    }
 }
